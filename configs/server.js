@@ -7,7 +7,6 @@ import morgan from 'morgan'
 import { dbConnection } from './mongo.js';
 import userRoutes from '../src/user/user.routes.js';
 
-
 class Server {
     constructor() {
         this.app = express();
