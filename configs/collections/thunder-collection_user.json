@@ -1,0 +1,61 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "user",
+    "dateExported": "2024-03-01T17:43:29.680Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "fb671a8c-bb88-4830-ae73-79758cba72f8",
+            "colId": "b2c214cd-a0ee-4c5d-9394-be743d4edb5c",
+            "containerId": "",
+            "name": "CreateUser",
+            "url": "http://localhost:3000/opinionManager/v1/users/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T16:38:16.429Z",
+            "modified": "2024-03-01T16:48:19.150Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"one\",\n  \"UserName\": \"one\",\n  \"lastName\": \"two\",\n  \"email\": \"one@kinal.edu.gt\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2ee3fc30-924b-4be1-bc84-cefdc1c4ae99",
+            "colId": "b2c214cd-a0ee-4c5d-9394-be743d4edb5c",
+            "containerId": "",
+            "name": "GetUser",
+            "url": "http://localhost:3000/opinionManager/v1/users/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-01T17:16:22.158Z",
+            "modified": "2024-03-01T17:16:41.601Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "96ba459d-d2f5-442c-9b46-0de9792e9b87",
+            "colId": "b2c214cd-a0ee-4c5d-9394-be743d4edb5c",
+            "containerId": "",
+            "name": "UpdateUser",
+            "url": "http://localhost:3000/opinionManager/v1/users/65e20c61348c6238517a5e7c",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-01T17:29:13.131Z",
+            "modified": "2024-03-01T17:40:33.236Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"two\",\n  \"UserName\": \"two\",\n  \"lastName\": \"three\",\n  \"password\": \"246810\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
