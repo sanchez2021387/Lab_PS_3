@@ -34,7 +34,23 @@ export const createUser = async (req, res) => {
 
 export const updateUser = async (req, res = response) => {
     const { id } = req.params;
-    const { _id, password: newPassword, ...rest } = req.body;
+    const { _id, password: newPassword, oldPassword, ...rest } = req.body;
+
+    try{
+        const user = await User.findById(id);
+        if (!user){
+            return res.status(404).json({
+                msg: "User Not Found"
+            });
+        }
+        if (oldPassword && newPassword){
+            const valiPassword = bcryptjs.compareSync(oldPassword, user.password)
+            if(!valiPassword){
+                return res.status(404).json({
+                    msg: "The Old Password Is Incorrect"
+                });
+            }
+        }
 
     if (newPassword) {
         const salt = bcryptjs.genSaltSync();
@@ -42,10 +58,31 @@ export const updateUser = async (req, res = response) => {
     }
 
     await User.findByIdAndUpdate(id, rest);
+    
+    const userr = await User.findOne({_id: id});
+
+    res.status(200).json({
+        msg: 'update User',
+        userr
+    })
+}catch(e){
+    console.error(e);
+    res.status(500).json({
+        msg: "Server error"
+    })
+}    
+
+/*
+ if (newPassword) {
+            const salt = bcryptjs.genSaltSync();
+            rest.password = bcryptjs.hashSync(newPassword, salt);
+        }
+    
+        await User.findByIdAndUpdate(id, rest);
 
     const user = await User.findOne({ _id: id });
     res.status(200).json({
         msg: 'Update User.',
         user
-    })
+    });*/
 }
