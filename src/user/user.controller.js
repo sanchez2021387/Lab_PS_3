@@ -62,7 +62,7 @@ export const updateUser = async (req, res = response) => {
     const userr = await User.findOne({_id: id});
 
     res.status(200).json({
-        msg: 'update User',
+        msg: 'Update User',
         userr
     })
 }catch(e){

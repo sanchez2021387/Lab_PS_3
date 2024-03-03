@@ -1,14 +1,7 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import {
-    createUser,
-    getUsers,
-    updateUser
-} from "./user.controller.js";
-import {
-    existeUserById,
-    existenteEmail
-} from "../helpers/db-validators.js"
+import {createUser, getUsers, updateUser} from "./user.controller.js";
+import {existeUserById, existenteEmail} from "../helpers/db-validators.js"
 import {validarCampos} from "../middlewares/validar-campos.js"
 
 const router = Router();
@@ -22,10 +15,11 @@ router.post(
         check("UserName", "UserName is required"),
         check("lastName", "LastName is required"),
         check("email").custom(existenteEmail),
-        check("password").isLength({min:6})
-    ],
-    createUser
+        check("password").isLength({min:6}),
+        validarCampos
+    ],createUser
 );
+    createUser
 
 router.put(
     "/:id",

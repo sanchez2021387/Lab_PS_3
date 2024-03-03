@@ -21,13 +21,13 @@ export const login = async (req, res) =>{
         if(!user.state){
             return res.status(400).json({
                 msg: "The user does not exist in your database"
-            })
+            });
         }
         const valiPassword = bcryptjs.compareSync(password, user.password);
         if(!valiPassword){
             return res.status(400).json({
                 msg: "Password is incorrect"
-            })
+            });
         }
         
         const token = await generarJWT(user.id);
@@ -35,11 +35,11 @@ export const login = async (req, res) =>{
             msg: 'Login',
             user,
             token
-        })
+        });
     }catch (e){
             console.log(e);
             res.status(500).json({
                 msg: "Contact administrator"
-            })
+            });
         }
  }
