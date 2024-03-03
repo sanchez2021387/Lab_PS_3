@@ -1,5 +1,5 @@
 import bcryptjs from 'bcryptjs';
-import User from '../helpers/generate-jwt.js';
+import User from '../user/user.model.js';
 import { generarJWT } from '../helpers/generate-jwt.js';
 
 export const login = async (req, res) =>{
@@ -37,10 +37,9 @@ export const login = async (req, res) =>{
             token
         })
     }catch (e){
-        console.log(e)
             console.log(e);
             res.status(500).json({
                 msg: "Contact administrator"
             })
         }
-}
+ }
