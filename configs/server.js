@@ -15,14 +15,20 @@ class Server {
         this.port = process.env.PORT;
         this.usuarioPath = '/opinionManager/v1/users';
         this.authPath = '/opinionManager/v1/auth';
+<<<<<<< HEAD
         this.publicationsPath= '/opinionManager/v1/publications';
+=======
+>>>>>>> a120ec048c6a6f8afd2e7b44bd59fc6195e62a91
         
 
         this.middlewares();
         this.conectarDB();
         this.routes();
     } 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a120ec048c6a6f8afd2e7b44bd59fc6195e62a91
     async conectarDB() {
         await dbConnection();
     }
