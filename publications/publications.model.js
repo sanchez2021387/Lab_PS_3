@@ -1,4 +1,4 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 
 const PublicationsSchema = mongoose.Schema({
         title: {
@@ -13,10 +13,15 @@ const PublicationsSchema = mongoose.Schema({
             type: String,
             required: [true, "Content is rerquired"]
         },
-        id_User: {
+        createdBy: {
             type: mongoose.Schema.Types.ObjectId,
-            ref: 'User'
+            ref: 'User',
+            required: true
+        },
+        state: {
+            type: Boolean,
+            default: true
         }
 });
 
-export default mongoose.model('publications', PublicationsSchema);
+export default mongoose.model('Publications', PublicationsSchema);
