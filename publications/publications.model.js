@@ -15,12 +15,8 @@ const PublicationsSchema = mongoose.Schema({
         },
         createdBy: {
             type: mongoose.Schema.Types.ObjectId,
-<<<<<<< HEAD
             ref: 'User',
             required: true
-=======
-            ref: 'User'
->>>>>>> 4becc68a971106292714015a9f5ce5062c608241
         },
         state: {
             type: Boolean,

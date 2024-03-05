@@ -1,7 +1,11 @@
 {
     "client": "Thunder Client",
     "collectionName": "Login",
+<<<<<<< HEAD
     "dateExported": "2024-03-05T02:50:46.809Z",
+=======
+    "dateExported": "2024-03-03T04:26:30.415Z",
+>>>>>>> 4becc68a971106292714015a9f5ce5062c608241
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,15 +18,25 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-03-02T20:24:37.886Z",
+<<<<<<< HEAD
             "modified": "2024-03-05T02:34:44.736Z",
+=======
+            "modified": "2024-03-03T03:41:51.544Z",
+>>>>>>> 4becc68a971106292714015a9f5ce5062c608241
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
+<<<<<<< HEAD
                 "raw": "{\n  \"emailOrUser\": \"Maggi\",\n  \"password\": \"12345678\"\n}",
                 "form": []
             },
             "reqType": "post",
+=======
+                "raw": "{\n  \"emailOrUser\": \"Magi\",\n  \"password\": \"44444444\"\n}",
+                "form": []
+            },
+>>>>>>> 4becc68a971106292714015a9f5ce5062c608241
             "tests": []
         }
     ]
