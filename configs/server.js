@@ -7,11 +7,7 @@ import morgan from 'morgan'
 import { dbConnection } from './mongo.js';
 import userRoutes from '../src/user/user.routes.js';
 import authRoutes from '../src/auth/auth.routes.js';
-<<<<<<< HEAD
 import publicationsRoutes from '../src/publications/publications.routes.js'
-=======
-import publicationsRoutes from '../src/Publications/publications.routes.js';
->>>>>>> 4becc68a971106292714015a9f5ce5062c608241
 
 class Server {
     constructor() {
@@ -19,28 +15,15 @@ class Server {
         this.port = process.env.PORT;
         this.usuarioPath = '/opinionManager/v1/users';
         this.authPath = '/opinionManager/v1/auth';
-<<<<<<< HEAD
         this.publicationsPath= '/opinionManager/v1/publications';
-=======
-<<<<<<< HEAD
-        this.publicationsPath= '/opinionManager/v1/publications';
-=======
->>>>>>> a120ec048c6a6f8afd2e7b44bd59fc6195e62a91
->>>>>>> 4becc68a971106292714015a9f5ce5062c608241
-        
+     
+
 
         this.middlewares();
         this.conectarDB();
         this.routes();
     } 
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> a120ec048c6a6f8afd2e7b44bd59fc6195e62a91
->>>>>>> 4becc68a971106292714015a9f5ce5062c608241
     async conectarDB() {
         await dbConnection();
     }

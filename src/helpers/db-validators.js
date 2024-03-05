@@ -1,14 +1,5 @@
 import User from '../user/user.model.js';
-<<<<<<< HEAD
-
 import Publications from '../publications/publications.model.js';
-=======
-<<<<<<< HEAD
-=======
-import Publications from '../Publications/Publications.model.js';
-
->>>>>>> a120ec048c6a6f8afd2e7b44bd59fc6195e62a91
->>>>>>> 4becc68a971106292714015a9f5ce5062c608241
 
 export const existenteEmail = async (email = '') =>{
     const existeEmail = await User.findOne({ email });

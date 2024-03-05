@@ -1,8 +1,5 @@
-<<<<<<< HEAD
+
 import mongoose from 'mongoose';
-=======
-import mongoose, { mongo } from "mongoose";
->>>>>>> 4becc68a971106292714015a9f5ce5062c608241
 
 const UserSchema = mongoose.Schema({
     
