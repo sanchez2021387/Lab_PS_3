@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "65e23fc9534a5dc40cc45d4d"
+  },
+  "name": "two",
+  "UserName": "two",
+  "lastName": "three",
+  "email": "one@kinal.edu.gt",
+  "password": "$2a$10$5RgWXSxkdebBrZFqLt9KyOpULWgiv0.l0qPGQoKYOSvlZI5TZoUoa",
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e38aafaae3074869014725"
+  },
+  "name": "JuniSan",
+  "UserName": "Junior",
+  "lastName": "Sanchez",
+  "email": "JuniSan@kinal.edu.gt",
+  "password": "$2a$10$OCxDjes7f3P8/Dg7bVLMH.6xiZmBW4d0SGISjmTt.toitECB2AFl2",
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e3e436b0563cb1bdad7470"
+  },
+  "name": "Junior",
+  "UserName": "Marco",
+  "lastName": "Sanchez",
+  "email": "jr@kinal.edu.gt",
+  "password": "$2a$10$EXxXBqkwMUhqoRPW50TdgOET1swsbduU7vyWoITKfBnI.17aGfUT6",
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e3f16ce35277d516bb2feb"
+  },
+  "name": "Malyn",
+  "UserName": "Magi",
+  "lastName": "Garcia",
+  "email": "Magi@kinal.edu.gt",
+  "password": "$2a$10$206Lb/bxeaAsKHnCMkjGAOHBBee/YxQ581zsIybJ5Y8PE7Armd/wa",
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e68499b0e41d8f02c02e1c"
+  },
+  "name": "Marelyn",
+  "UserName": "Maggi",
+  "lastName": "Garcia",
+  "email": "Maggi@kinal.edu.gt",
+  "password": "$2a$10$zgTqDeeLLXM385L6.EydPOQlZithoc7Gq9eJWpxtBLFzdSVYEkvEO",
+  "state": true,
+  "__v": 0
+}]

@@ -1,0 +1,94 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Publications",
+    "dateExported": "2024-03-05T02:50:11.207Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "cbe69216-4a86-4fc8-b7f7-4bdae257538a",
+            "colId": "4c55f3fd-f1e8-46ae-adde-917de1cfbbca",
+            "containerId": "",
+            "name": "createPublications",
+            "url": "http://localhost:3000/opinionManager/v1/publications",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-05T02:37:11.710Z",
+            "modified": "2024-03-05T02:39:52.664Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU2ODQ5OWIwZTQxZDhmMDJjMDJlMWMiLCJpYXQiOjE3MDk2MDYwODQsImV4cCI6MTcwOTYwOTY4NH0.vdyrepPVuFn9GD2sy2Pu1_gd0qBl9i1L5iK2BCHR8sI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\" : \"Intentando ganar Taller\",\n  \"category\" : \"Academico\",\n  \"content\" : \"Espero profesor me apoye quizas no sea tan bueno con esto gracias\",\n  \"id_User\" : \"65e68499b0e41d8f02c02e1c\"\n}",
+                "form": []
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "fef70227-c91c-4b38-bc17-e727832947f3",
+            "colId": "4c55f3fd-f1e8-46ae-adde-917de1cfbbca",
+            "containerId": "",
+            "name": "GetPublications",
+            "url": "http://localhost:3000/opinionManager/v1/publications",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-05T02:44:22.697Z",
+            "modified": "2024-03-05T02:44:48.527Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "49af9ff0-0659-4742-afff-63e80c7697b9",
+            "colId": "4c55f3fd-f1e8-46ae-adde-917de1cfbbca",
+            "containerId": "",
+            "name": "updatePublications",
+            "url": "http://localhost:3000/opinionManager/v1/publications/65e68499b0e41d8f02c02e1c",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-05T02:45:25.057Z",
+            "modified": "2024-03-05T02:48:22.434Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU2ODQ5OWIwZTQxZDhmMDJjMDJlMWMiLCJpYXQiOjE3MDk2MDYwODQsImV4cCI6MTcwOTYwOTY4NH0.vdyrepPVuFn9GD2sy2Pu1_gd0qBl9i1L5iK2BCHR8sI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\" : \"intento 1\",\n  \"category\" : \"Kinal\",\n  \"content\" : \"intento\",\n  \"id_User\" : \"65e68499b0e41d8f02c02e1c\"\n}",
+                "form": []
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "eafb640b-7897-4c3e-82ff-ac81738a3489",
+            "colId": "4c55f3fd-f1e8-46ae-adde-917de1cfbbca",
+            "containerId": "",
+            "name": "deletePublications",
+            "url": "http://localhost:3000/opinionManager/v1/publications/65e68499b0e41d8f02c02e1c",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-05T02:49:03.797Z",
+            "modified": "2024-03-05T02:50:02.643Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU2ODQ5OWIwZTQxZDhmMDJjMDJlMWMiLCJpYXQiOjE3MDk2MDYwODQsImV4cCI6MTcwOTYwOTY4NH0.vdyrepPVuFn9GD2sy2Pu1_gd0qBl9i1L5iK2BCHR8sI"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        }
+    ]
+}
